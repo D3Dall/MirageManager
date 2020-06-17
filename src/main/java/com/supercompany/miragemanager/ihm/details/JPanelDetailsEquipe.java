@@ -1,25 +1,15 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package com.supercompany.miragemanager.ihm.details;
 
 import com.supercompany.miragemanager.ihm.Canvas;
-import com.supercompany.miragemanager.ihm.table.CellRenderer.BlueTableColoredCellRenderer;
 import com.supercompany.miragemanager.ihm.table.TableModel.MatriceCompetenceTableModel;
 import com.supercompany.miragemanager.ihm.table.CellRenderer.MatriceTableColoredCellRenderer;
 import fr.jaschavolp.m1.jee.mirageshared.equipe.DetailsEquipeVM;
 import fr.jaschavolp.m1.jee.mirageshared.equipe.Matrice.MatriceCollaborateurVM;
 import java.awt.BorderLayout;
-import java.awt.Color;
 import java.util.ArrayList;
 import java.util.List;
-import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import javax.swing.JTable;
-import javax.swing.table.TableColumn;
-import javax.swing.table.TableColumnModel;
 
 /**
  * Structure une JPanel personnalisé pour afficher toutes les informations sur une équipe

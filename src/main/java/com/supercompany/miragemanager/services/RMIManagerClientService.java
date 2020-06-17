@@ -1,18 +1,13 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package com.supercompany.miragemanager.services;
 
-import java.util.Properties;
+
 import javax.naming.InitialContext;
 import javax.naming.NamingException;
 import fr.jaschavolp.m1.jee.mirageshared.shared.services.ServicesManagerRemote;
 import javax.naming.Context;
 
 /**
- *
+ * Structure un service RMI pour l'interaction entre le serveur et un client MIA-Manager
  * @author FlorianDELSOL
  */
 public class RMIManagerClientService {
@@ -21,12 +16,18 @@ public class RMIManagerClientService {
     private Context ctx;
     private ServicesManagerRemote remoteSvc;
     
+    /**
+     * Créer une nouvelle instance
+     * @throws NamingException 
+     */
     public RMIManagerClientService () throws NamingException{
         this.ctx = new InitialContext();
         remoteSvc = (ServicesManagerRemote) ctx.lookup(URI);
     }
-    
 
+    /**
+     * @return le service permettant la communication avec le serveur
+     */
     public ServicesManagerRemote getDabRemoteSvc() {
         return remoteSvc;
     }

@@ -1,9 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
 package com.supercompany.miragemanager.ihm.connexion;
 
 import com.supercompany.miragemanager.ihm.Canvas;
@@ -16,7 +10,7 @@ import java.util.logging.Logger;
 import javax.naming.NamingException;
 
 /**
- *
+ * Classe de JFrame pour la connexion d'un Manager
  * @author FlorianDELSOL
  */
 public class CanvasDeConnexion extends javax.swing.JFrame {
@@ -27,7 +21,8 @@ public class CanvasDeConnexion extends javax.swing.JFrame {
     private final ServicesManagerRemote service;
     
     /**
-     * Creates new form CanvasDeConnexion
+     * Creer une nouvelle instance
+     * @throws javax.naming.NamingException
      */
     public CanvasDeConnexion() throws NamingException {
         initComponents();

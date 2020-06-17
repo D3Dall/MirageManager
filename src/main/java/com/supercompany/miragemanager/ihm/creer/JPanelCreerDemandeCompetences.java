@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package com.supercompany.miragemanager.ihm.creer;
 
 import com.supercompany.miragemanager.ihm.popup.ConfirmationPopUp;
@@ -15,7 +10,6 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import javax.swing.JFormattedTextField;
 
 /**
  * Structure une JPanel Personnalisée pour la création d'une demande de compétences
@@ -68,7 +62,6 @@ public class JPanelCreerDemandeCompetences extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jButton2 = new javax.swing.JButton();
         jPanelIdentifiant = new javax.swing.JPanel();
         jLabelCompetenceTitre = new javax.swing.JLabel();
         jButtonAjouterCompetence = new javax.swing.JButton();
@@ -78,8 +71,6 @@ public class JPanelCreerDemandeCompetences extends javax.swing.JPanel {
         jLabelListeCompetencesData = new javax.swing.JLabel();
         jPanelAction = new javax.swing.JPanel();
         jButtonEnvoyerDmd = new javax.swing.JButton();
-
-        jButton2.setText("jButton2");
 
         setBackground(new java.awt.Color(255, 255, 255));
 
@@ -229,7 +220,6 @@ public class JPanelCreerDemandeCompetences extends javax.swing.JPanel {
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton2;
     private javax.swing.JButton jButtonAjouterCompetence;
     private javax.swing.JButton jButtonEnvoyerDmd;
     private javax.swing.JLabel jLabelCompetenceTitre;
