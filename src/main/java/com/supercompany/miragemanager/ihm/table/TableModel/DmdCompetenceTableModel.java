@@ -49,7 +49,7 @@ public class DmdCompetenceTableModel extends AbstractTableModel{
             case 0 : 
                 return data.get(rowIndex).getIdentifiant();
             case 1 : 
-                return data.get(rowIndex).getNomFichePoste() != null ? "En cours de recrutement" :  data.get(rowIndex).getValidationCODIR() != null && data.get(rowIndex).getValidationCODIR() ? "Validé par le codir" : "En attente de traitement par le CODIR";
+                return data.get(rowIndex).getNomFichePoste() != null ? "En cours de recrutement ou assouvie" :  data.get(rowIndex).getValidationCODIR() != null && data.get(rowIndex).getValidationCODIR() ? "Validé par le codir" : "En attente de traitement par le CODIR";
             case 2 :
                 String txt = "";
                 for(int i = 0; i<data.get(rowIndex).getCompetence().size(); i++){
